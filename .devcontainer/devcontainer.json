@@ -1,0 +1,20 @@
+{
+  "name": "settings",
+  
+  // VSCode settings
+  "settings": {
+    "yarn.runInTerminal": true,
+    "npm.packageManager": "yarn",
+    "markdown.preview.breaks": true,
+    "workbench.colorTheme": "Dracula",
+    "html.autoClosingTags": false,
+    "http.proxy": "",
+    "http.proxyAuthorization": null,
+    "http.proxyStrictSSL": false,
+    "editor.suggestSelection": "first",
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+  }
+}
