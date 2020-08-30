@@ -1,20 +1,27 @@
 {
-  "name": "settings",
-  
-  // VSCode settings
-  "settings": {
-    "yarn.runInTerminal": true,
-    "npm.packageManager": "yarn",
-    "markdown.preview.breaks": true,
-    "workbench.colorTheme": "Dracula",
-    "html.autoClosingTags": false,
-    "http.proxy": "",
-    "http.proxyAuthorization": null,
-    "http.proxyStrictSSL": false,
-    "editor.suggestSelection": "first",
-    "editor.formatOnPaste": false,
-    "editor.formatOnType": false,
-    "editor.formatOnSave": false,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
-  }
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick a Node version: 10, 12, 14
+		"args": { "VARIANT": "14" }
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"dbaeumer.vscode-eslint"
+	]
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "node"
 }
